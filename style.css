@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-paragraph {
+  font-weight: 200;
+  color: hsl(229, 6%, 66%);
+}
+.title-h1 {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+.title-paragraph-details {
+  font-size: 15px;
+  color: hsl(229, 6%, 66%);
+}
+.title span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+.boxes-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+.boxes {
+  border-radius: 7px;
+  padding: 2rem;
+  width: 320px;
+  height: 160px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.boxes h3 {
+  color: hsl(234, 12%, 34%);
+}
+.boxes p {
+  margin-top: 0.5rem;
+  color: hsl(229, 6%, 66%);
+}
+.boxes img {
+  position: absolute;
+  right: 1.2rem;
+  bottom: 1.2rem;
+}
+.boxes:nth-child(1),
+.boxes:nth-child(3) {
+  transform: translateY(50%);
+}
+.boxes:nth-child(1) {
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+.boxes:nth-child(2) {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+.boxes:nth-child(3) {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+.boxes:nth-child(4) {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+@media (max-width: 1200px) {
+  .boxes:nth-child(1),
+  .boxes:nth-child(3) {
+    transform: translateY(0%);
+  }
+}
+@media (max-width: 500px) {
+  .boxes {
+    width: 270px;
+  }
+}
+@media (max-width: 400px) {
+  .boxes {
+    width: 250px;
+  }
+  .title-h1,
+  .title-paragraph-details {
+    text-align: center;
+  }
+  .title-h1 {
+    font-size: 1.5rem;
+  }
+  .title-paragraph {
+    font-size: 25px;
+  }
+}
